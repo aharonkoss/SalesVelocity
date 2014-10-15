@@ -1,12 +1,14 @@
-<html ng-app>
+<html ng-app="LoginApp">
 <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script src='js/bootstrap.js'></script>
     <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
     <script src='js/bootstrap-datepicker.js'></script>
+    <script src='js/login.js'></script>
+
     <link rel='stylesheet' href='css/bootstrap.css'>
     <link rel="stylesheet" href="css/datepicker.css">
-    <title>Face To Face Navigator</title>
+    <title>Login - Sales Velocity Planner</title>
     <style type="text/css">
         td {text-align: center}
         table {margin: auto}
@@ -34,9 +36,45 @@
     <div class="panel panel-heading">
         <h3 class="panel-title">Login To Sales Velocity Planner</h3>
     </div>
-    <!--
-         Add Login Form Here
-    !-->
+    <table ng-controller='LoginController'>
+     <tr>
+         <td>Login Name:</td>
+         <td>&nbsp;</td>
+         <td><input type="text" ng-model="txtlogin" placeholder="enter login name" /></td>
+     </tr>
+     <tr>
+         <td>Password:</td>
+         <td>&nbsp;</td>
+         <td><input type="password" ng-model="txtpassword" placeholder="enter password" /></td>
+     </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td style="text-align: right"><button type="button" class="btn btn-primary" ng-click='goValidate()'>
+                <span class="glyphicon glyphicon-ok"></span> Login
+            </button></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>{{vfeedback}}</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>
