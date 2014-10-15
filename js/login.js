@@ -2,6 +2,8 @@ var vLoginApp = angular.module('LoginApp', []);
 
 vLoginApp.controller('LoginController', function ($scope, $location, $window)
 { //begin LoginController
+    var target = angular.element('#logintxt');
+    target.focus();
    $scope.goValidate = function()
    { //begin goValidate
        if ($scope.txtlogin == 'Demo' && $scope.txtpassword == 'Demo1234')
