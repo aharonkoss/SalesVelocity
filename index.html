@@ -1,0 +1,42 @@
+<html ng-app>
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src='js/bootstrap.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js'></script>
+    <script src='js/bootstrap-datepicker.js'></script>
+    <link rel='stylesheet' href='css/bootstrap.css'>
+    <link rel="stylesheet" href="css/datepicker.css">
+    <title>Face To Face Navigator</title>
+    <style type="text/css">
+        td {text-align: center}
+        table {margin: auto}
+    </style>
+    <script>
+        // When the document is ready
+        $(document).ready(function () {
+
+            $('#txtDate').datepicker({
+                format: "mm/dd/yyyy"
+            });
+
+        });
+        function clock($scope)
+        { //begin clock function
+            $scope.currenttime = new Date();
+        } //end clock function
+    </script>
+</head>
+<body style="padding-left:10%; font-size:18pt;font-family: verdana ">
+<div>
+    <img src="images/PNLogo.jpg" style="width:386px;height:86px" />
+</div>
+<div class="panel panel-primary" style="width:50%">
+    <div class="panel panel-heading">
+        <h3 class="panel-title">Login To Sales Velocity Planner</h3>
+    </div>
+    <!--
+         Add Login Form Here
+    !-->
+</div>
+</body>
+</html>
