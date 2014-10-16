@@ -2,12 +2,12 @@ var vWhatIf = angular.module('WhatIf', []);
 
 vWhatIf.controller('NavController', function ($scope)
 { //begin NavController
-    //Initially show the what if div tag and hide the def div tag
-    $scope.whatifclass = 'clsshow';
-    $scope.defclass = 'clshid';
-    $scope.csswhatif = 'active';
-    $scope.cssdef = 'success';
-    $scope.vTitle = 'What If Sales Velocity Tool';
+    //Initially show the def & assumptions (per Nick) div tag and hide the def div tag
+    $scope.whatifclass = 'clshid';
+    $scope.defclass = 'clsshow';
+    $scope.csswhatif = 'success';
+    $scope.cssdef = 'active';
+    $scope.vTitle = 'Definitions & Assumptions';
     $scope.goWhatIf = function()
     { //begin goWhatIf
         $scope.whatifclass = 'clsshow';
@@ -38,12 +38,27 @@ vWhatIf.controller('SVController', function ($scope)
       $scope.$watch('scenarios.wlr', ReCalcScenario);
       $scope.$watch('scenarios.atc', ReCalcScenario);
 }); //end  SVController
+//this adds the percentage
 angular.module('WhatIf')
     .filter('percentage', ['$filter', function($filter) {
         return function(input, decimals) {
-            return $filter('number')(input*100, decimals)+'%';
+            return $filter('number') (input*100, decimals)+'%';
         };
     }]);
+//this adds the currency (currencys)
+vWhatIf.directive('currencys', function () {
+    return {
+        require: 'WhatIf',
+        link: function(elem, $scope, attrs, ngModel){
+            ngModel.$formatters.push(function(val){
+                return '$' + val
+            });
+            ngModel.$parsers.push(function(val){
+                return val.replace(/^\$/, '')
+            });
+        }
+    }
+})
 vWhatIf.directive("percentInput", function($filter){
     return {
         require: 'ngModel',
