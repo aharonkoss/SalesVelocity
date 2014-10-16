@@ -7,12 +7,14 @@ vWhatIf.controller('NavController', function ($scope)
     $scope.defclass = 'clshid';
     $scope.csswhatif = 'active';
     $scope.cssdef = 'success';
+    $scope.vTitle = 'What If Sales Velocity Tool';
     $scope.goWhatIf = function()
     { //begin goWhatIf
         $scope.whatifclass = 'clsshow';
         $scope.defclass = 'clshid';
         $scope.csswhatif = 'active';
         $scope.cssdef = 'success';
+        $scope.vTitle = 'What If Sales Velocity Tool';
 
     } //end goWhatIf
     $scope.goDef = function()
@@ -21,6 +23,7 @@ vWhatIf.controller('NavController', function ($scope)
         $scope.defclass = 'clsshow';
         $scope.csswhatif = 'success';
         $scope.cssdef = 'active';
+        $scope.vTitle = 'Definitions & Assumptions';
     } //end goDef
 });
 vWhatIf.controller('SVController', function ($scope)

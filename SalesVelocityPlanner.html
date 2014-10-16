@@ -32,40 +32,39 @@
         } //end clock function
     </script>
 </head>
-<body style="padding-left:10%; font-size:18pt;font-family: calibri (body) ">
-<div>
-    <img src="images/PNLogo.jpg" style="width:386px;height:86px" />
-</div>
+<body style="padding-left:10%; font-family: calibri(body)">
 <div ng-controller='NavController'>
-    <ul class="nav nav-pills">
-        <li class='{{csswhatif}}'><a ng-click="goWhatIf()">What If</a></li>
+    <table style="width: 65%">
+ <tr>
+    <td style="text-align: left"><img src="images/PNLogo.jpg" style="width:386px;height:86px" /></td>
+    <td style="color: #428bca; font-size: 15pt; text-align: right; padding-top: 0px">{{vTitle}}</td>
+ </tr>
+    </table>
+    <ul class="nav nav-pills" style="font-size:15pt">
         <li class='{{cssdef}}'><a ng-click="goDef()">Definitions & Assumptions</a></li>
+        <li class='{{csswhatif}}'><a ng-click="goWhatIf()">What If</a></li>
     </ul>
 <div id="main" ng-controller='SVController'>
 <div name="divWhatIf" class='{{whatifclass}}'>
-<h2>What If Monthly Sales Velocity</h2>
-<br /><br />
-<table>
+<br /><br /><br /><br /><br /><br /><br />
+<table style="font-size:16pt">
 <tr>
-    <td colspan="7">*Once you provide your definitions on the previous tab or below in the blue fields, the tool will define the Sales Ready Opportunities required to reach your goal.</td>
+  <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
 </tr>
 <tr>
-  <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff">
-</tr>
-<tr>
- <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff">
+ <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
 </tr>
  <tr>
-  <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff">
+  <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
  </tr>
  <tr>
-  <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff">
+  <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
  </tr>
     <tr>
-        <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff">
+        <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
     </tr>
     <tr>
-        <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff">
+        <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
     </tr>
 <tr>
     <td>Monthly Sales Velocity</td>
@@ -79,7 +78,7 @@
     <tr>
         <td><input type="text" ng-model="scenarios.sv" currency-input="" placeholder="Enter Value" style="background-color:#9BC2E6; width:230px;text-align: center" /></td>
         <td>&nbsp;</td>
-        <td><input type="text" ng-model="sro" currency-input="" placeholder="Enter Value" style="background-color:#ffff00; width:230px;text-align: center" /></td>
+        <td><input type="text" ng-model="sro" readonly="true" placeholder="Enter Value" style="background-color:#FFFF99; width:230px;text-align: center" /></td>
         <td>&nbsp;</td>
         <td><input type="text" ng-model="scenarios.ads" currency-input="" placeholder="Enter Value" style="background-color:#9BC2E6; width:230px;text-align: center" /></td>
         <td>&nbsp;</td>
@@ -107,14 +106,22 @@
     <tr>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
-        <td colspan="5" style="text-align: center">Average time to Close</td>
+        <td colspan="5" style="text-align: center">Average time to Close (Days)</td>
+    </tr>
+    <tr>
+        <td colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="7">&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="7" style="font-size:10pt">*Once you provide your definitions on the previous tab or below in the blue fields, the tool will define the Sales Ready Opportunities required to reach your goal.</td>
     </tr>
  </table>
-</div>
+   </div>
 <div name="divDef" class='{{defclass}}'>
-    <h2>Definitions & Assumptions</h2>
-    <br><br>
-    <table>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <table style="font-size:16pt">
         <tr>
             <td style="text-align:right">Goal:</td>
             <td>Monthly Sales Velocity</td>
