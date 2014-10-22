@@ -28,10 +28,10 @@ vWhatIf.controller('NavController', function ($scope)
 });
 vWhatIf.controller('SVController', function ($scope)
   { //begin SVController
-    $scope.scenarios = {sv: 2000000, ads: 500000, wlr: 0.5, atc: 90};
+    $scope.scenarios = {sv: 2000000, ads: 500000, wlr: 50, atc: 90};
     var ReCalcScenario = function ()
     { //begin ReCalcScenario
-      $scope.sro = $scope.scenarios.sv / (($scope.scenarios.ads * $scope.scenarios.wlr)/($scope.scenarios.atc / 30))
+      $scope.sro = $scope.scenarios.sv / (($scope.scenarios.ads * ($scope.scenarios.wlr/100))/($scope.scenarios.atc / 30))
     } //end ReCalcScenario
       $scope.$watch('scenarios.sv', ReCalcScenario);
       $scope.$watch('scenarios.ads', ReCalcScenario);
@@ -42,7 +42,7 @@ vWhatIf.controller('SVController', function ($scope)
 angular.module('WhatIf')
     .filter('percentage', ['$filter', function($filter) {
         return function(input, decimals) {
-            return $filter('number') (input*100, decimals)+'%';
+            return $filter('number') (input, decimals)+'%';
         };
     }]);
 //this adds the currency (currencys)

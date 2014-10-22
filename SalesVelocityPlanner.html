@@ -34,7 +34,7 @@
 </head>
 <body style="padding-left:10%; font-family: calibri(body)">
 <div ng-controller='NavController'>
-    <table style="width: 55%">
+    <table style="width: 66%">
  <tr>
     <td style="text-align: left"><img src="images/PNLogo.jpg" style="width:386px;height:86px" /></td>
     <td style="color: #428bca; font-size: 15pt; text-align: right; padding-top: 0px">{{vTitle}}</td>
@@ -47,75 +47,133 @@
 <div id="main" ng-controller='SVController'>
 <div name="divWhatIf" class='{{whatifclass}}'>
 <br /><br /><br /><br /><br /><br /><br />
-<table style="font-size:16pt">
+<table style="font-size:18pt">
 <tr>
-  <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
+  <td colspan="13" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
 </tr>
 <tr>
- <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
+ <td colspan="13" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
 </tr>
  <tr>
-  <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
+  <td colspan="13" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
  </tr>
  <tr>
-  <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
+  <td colspan="13" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
  </tr>
     <tr>
-        <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
+        <td colspan="13" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
     </tr>
     <tr>
-        <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
+        <td colspan="13" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff"></td>
     </tr>
 <tr>
     <td>Monthly Sales Velocity</td>
-    <td style="vertical-align: bottom">&#61;</td>
+    <td>&nbsp;</td>
+    <td rowspan="2" style="vertical-align: middle;font-size:14pt">&#61;</td>
+    <td>&nbsp;</td>
     <td>Sales Ready Opportunities</td>
-    <td style="vertical-align: bottom">&#88;</td>
+    <td>&nbsp;</td>
+    <td rowspan="2" style="vertical-align: middle;font-size:14pt">&#88;</td>
+    <td>&nbsp;</td>
     <td>Average Deal Size</td>
-    <td style="vertical-align: bottom">&#88;</td>
+    <td>&nbsp;</td>
+    <td rowspan="2" style="vertical-align: middle;font-size:14pt">&#88;</td>
+    <td>&nbsp;</td>
     <td>Win/Loss Ratio</td>
 </tr>
     <tr>
-        <td><input type="text" ng-model="scenarios.sv" currency-input="" placeholder="Enter Value" style="background-color:#9BC2E6; width:230px;text-align: center" /></td>
+        <td><input type="text" ng-model="scenarios.sv" currency-input="" placeholder="Enter Value" style="background-color:#9BC2E6; width:100%;text-align: center" /></td>
         <td>&nbsp;</td>
-        <td><input type="text" ng-model="sro" readonly="true" currency-input="" placeholder="Enter Value" style="background-color:#FFFF99; width:230px;text-align: center" /></td>
+        <td>&nbsp;</td>
+        <td><input type="text" ng-model="sro" readonly="true" currency-input="" placeholder="Enter Value" style="background-color:#FFFF99; width:100%;text-align: center" /></td>
+        <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td><input type="text" ng-model="scenarios.ads" currency-input="" placeholder="Enter Value" style="background-color:#9BC2E6; width:230px;text-align: center" /></td>
         <td>&nbsp;</td>
+        <td>&nbsp;</td>
         <td><input type="text" ng-model="scenarios.wlr" percent-input="" placeholder="Enter Value" style="background-color:#9BC2E6; width:230px;text-align: center" /></td>
     </tr>
-    <tr>
-        <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff">
-    </tr>
-    <tr style="text-align: center;padding-bottom: 0px; padding-top: 0px;">
+    <tr style="text-align: center;padding-bottom: 2px; padding-top: 2px">
         <td></td>
         <td></td>
-        <td colspan="5" style="border:1px solid #000000;padding-top: 1px; padding-bottom: 1px; background-color: #000000"></td>
+        <td></td>
+        <td></td>
+        <td colspan="9" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color:#ffffff"></td>
     </tr>
-    <tr>
-        <td colspan="7" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color: #ffffff">
+    <tr style="text-align: center;padding-bottom: 2px; padding-top: 2px">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="9" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color:#ffffff"></td>
+    </tr>
+    <tr style="text-align: center;padding-bottom: 2px; padding-top: 2px">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="9" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color:#ffffff"></td>
+    </tr>
+    <tr style="text-align: center;padding-bottom: 2px; padding-top: 2px">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="9" style="border:1px solid #000000;padding-top: 1px; padding-bottom: 1px; background-color:#000000"></td>
+    </tr>
+    <tr style="text-align: center;padding-bottom: 2px; padding-top: 2px">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="9" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color:#ffffff"></td>
+    </tr>
+    <tr style="text-align: center;padding-bottom: 2px; padding-top: 2px">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="9" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color:#ffffff"></td>
+    </tr>
+    <tr style="text-align: center;padding-bottom: 2px; padding-top: 2px">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="9" style="border:1px solid #ffffff;padding-top: 1px; padding-bottom: 1px; background-color:#ffffff"></td>
     </tr>
     <tr>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
-        <td colspan="5" style="text-align: center;"><input type="text" ng-model="scenarios.atc" currency-input="" placeholder="Enter Value" style="background-color:#9BC2E6; width:95%;text-align: center" /></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td colspan="9" style="text-align: center;"><input type="text" ng-model="scenarios.atc" currency-input="" placeholder="Enter Value" style="background-color:#9BC2E6; width:100%;text-align: center" /></td>
     </tr>
     <tr>
-        <td colspan="7" style="text-align: center"></td>
+        <td colspan="13" style="text-align: center"></td>
     </tr>
     <tr>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
-        <td colspan="5" style="text-align: center">Average time to Close (Days)</td>
+        <td colspan="11" style="text-align: center">Average time to Close (Days)</td>
     </tr>
     <tr>
-        <td colspan="7">&nbsp;</td>
+        <td colspan="13">&nbsp;</td>
     </tr>
     <tr>
-        <td colspan="7">&nbsp;</td>
+        <td colspan="13">&nbsp;</td>
     </tr>
     <tr>
-        <td colspan="7" style="font-size:10pt">*Once you provide your definitions on the previous tab or below in the blue fields, the tool will define the Sales Ready Opportunities required to reach your goal.</td>
+        <td colspan="13">&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="13">&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="13">&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="13" style="font-size:10pt; text-align: left">*Once you provide your definitions on the previous tab or below in the blue fields, the tool will define the Sales Ready Opportunities required to reach your goal.</td>
     </tr>
  </table>
    </div>
